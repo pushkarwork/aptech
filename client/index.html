@@ -1,13 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="/src/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/src/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="/src/assets/css/flexslider.css" type="text/css" media="screen" property="" />
+  <link rel="stylesheet" href="/src/assets/css/lightbox.css"> <!-- lightbox css -->
+
+  <!--stylesheet-->
+  <!-- js -->
+  <script src="/src/assets/js/jquery-1.11.1.min.js"></script>
+
+  <!-- //js -->
+  <!-- font-awesome-icons -->
+  <link href="/src/assets/css/font-awesome.css" type="text/css" rel="stylesheet">
+  <!-- //font-awesome-icons -->
+  <!--online fonts-->
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <!--//online fonts-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script type="text/javascript" src="/src/assets/js/move-top.js"></script>
+  <script type="text/javascript" src="/src/assets/js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+      });
+    });
+  </script>
+  <!-- start-smooth-scrolling -->
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+      */
+
+      $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+  </script>
+  <!-- //here ends scrolling icon -->
+  <script src="/src/assets/js/bootstrap.js"></script>
+  <script src="/src/assets/js/SmoothScroll.min.js"></script>
+</body>
+
 </html>
