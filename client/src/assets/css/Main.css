@@ -1,0 +1,18 @@
+.parent {
+    border: 1px solid red;
+    /* Optional, for visual reference */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    /* Three equal-width columns */
+    gap: 10px;
+    /* Optional, space between columns */
+}
+
+.logo {
+    border: 1px solid white !important;
+}
+
+.buttons {
+    border: 1px solid green !important;
+    width: fit-content !important;
+}
