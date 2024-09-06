@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import "../../assets/css/About.css"
 const About = () => {
     return (
         <div className="about" id="about">
             <div className="container">
-                <div className="w3-head-all text-center ">
+                <div className="w3-head-all text-center HeadingAbout">
                     <h3>About</h3>
                 </div>
 
@@ -19,7 +20,7 @@ const About = () => {
                     <div className="col-md-6 bottomgridimg">
                         <img src="images/ab11.jpg" alt=""/>
                     </div>
-                    <div className="clearfix"></div>
+                  
                 </div>
                 <div className="about-bottom-grid2">
                     <div className="col-md-6 bottomgridimg">
