@@ -1,9 +1,8 @@
 var express = require('express');
+const { PostFormData } = require('../Controllers/Form');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.post("/api/formData", PostFormData)
+router.route("/api/formData").post(PostFormData)
 
 module.exports = router;

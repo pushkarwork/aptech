@@ -1,4 +1,6 @@
-.container {}
+.mainC {
+    min-width: 85vw !important;
+}
 
 .HeadingAbout {
     color: #00bce4;
@@ -9,6 +11,7 @@
 .about-bottom-grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .bottomgridtext {
@@ -18,6 +21,11 @@
     display: flex;
     flex-direction: column;
     padding: 5vw 1vw;
+}
+
+.bottomgridtext h3 {
+    font-style: italic;
+    font-size: 25px;
 }
 
 .readmore {

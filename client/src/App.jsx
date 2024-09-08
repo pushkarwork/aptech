@@ -9,6 +9,7 @@ import Testimonials from './Components/Pages/Testimonials'
 import Contact from './Components/Pages/Contact'
 
 import Navbar from './Components/Layout/Navbar'
+import Footer from './Components/Layout/Footer'
 const App = () => {
   return (
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/test' element={<Testimonials />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
 
 

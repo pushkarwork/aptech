@@ -2,6 +2,23 @@
     background-color: #212121 !important;
 }
 
+.BrandLogo {
+    /* background-color: crimson; */
+    width: 15% !important;
+    /* Adjusted to ensure logo has enough space */
+    display: flex;
+    align-items: center;
+    /* Center the logo vertically */
+}
+
+.BrandLogo h4 {
+    /* background-color: white; */
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove default padding */
+}
+
 .navbar .navbar-brand,
 .navbar .nav-link {
     color: #e7a743 !important;
@@ -9,21 +26,17 @@
 
 .navbar .navbar-toggler {
     border-color: #e7a743 !important;
-    /* Changes border color */
     background-color: #e7a743 !important;
 }
 
-
-
-.MainContent {
+.navbar .MainContent {
     position: relative;
     width: 100vw;
     display: flex;
-    justify-content: space-around !important;
-}
-
-.BrandLogo {
-    width: 15%;
+    justify-content: space-between;
+    /* Updated to space-between for better alignment */
+    align-items: center;
+    /* Ensure items are centered vertically */
 }
 
 .navbar .MenuList {
@@ -35,13 +48,13 @@
 .UlList {
     display: flex;
     gap: 15px;
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove default padding */
 }
 
-
-
 @media (min-width: 601px) and (max-width: 1000px) {
-
-
     .MainContent {
         position: relative;
         width: 100vw;
@@ -65,7 +78,6 @@
 }
 
 @media (max-width: 600px) {
-
     .MainContent {
         position: relative;
         width: 100vw;

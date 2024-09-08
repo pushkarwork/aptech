@@ -1,0 +1,145 @@
+.footerC {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+.social-nav li {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer-left {
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+    gap: 3vw;
+
+}
+
+
+
+.footer-right {
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+    gap: 1vw;
+}
+
+.footer-right ul {
+    padding: 0;
+
+}
+
+.footer-right ul li {
+    margin-top: 0.5vw;
+    color: white !important;
+}
+
+.sign-gd-two {
+    /* background-color: chocolate; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 0 1vw;
+
+}
+
+.w3-address-left {
+    /* padding: 0; */
+    /* background-color: red; */
+    display: flex;
+    gap: 1vw;
+    /* align-items: center; */
+}
+
+.w3-address-left i {
+    margin-top: 2px;
+}
+
+#email {
+    color: #e7a743;
+    /* list-style: circle; */
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .footer {
+        background-color: black;
+        color: white;
+        margin-top: 3vw !important;
+        width: 80%;
+        gap: 3vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+
+    }
+
+    .footerC {
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: start;
+        margin-top: 7vw;
+        color: white;
+        padding-left: 1vw;
+    }
+
+    .footer-right ul li {
+        margin-top: 0.7vw;
+        color: white !important;
+        /* background-color: #e7a743; */
+    }
+
+    .sign-gd-two {
+        /* background-color: chocolate; */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        padding: 0 1vw;
+
+    }
+
+
+}
