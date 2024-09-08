@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/ApTech');
+        await mongoose.connect(process.env.mongoURI);
         console.log('MongoDB connected');
     } catch (error) {
         console.error('Error connecting to MongoDB:', error.message);

@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+const dotenv = require("dotenv")
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -10,6 +11,9 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 const db = require("./database/db")
+dotenv.config({
+  path: "./config/config.env"
+})
 // view engine setup
 db();
 app.set('views', path.join(__dirname, 'views'));
@@ -40,5 +44,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;
