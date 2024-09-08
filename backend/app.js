@@ -11,9 +11,12 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 const db = require("./database/db")
-dotenv.config({
-  path: "./config/config.env"
-})
+
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  dotenv.config({
+    path: "./config/config.env"
+  })
+}
 // view engine setup
 db();
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +31,17 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+if (process.env.NODE_ENV === "PRODUCTION") {
+
+  // console.log(path.join(__dirname, "../client/dist", "HIHIHIH"));
+  app.use(express.static(path.join(__dirname, "../client/dist")))
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../client/dist/index.html"))
+  })
+}
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

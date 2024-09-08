@@ -102,7 +102,6 @@ const Contact = () => {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    style={{ border: 0, width: '100%', height: '400px' }}
                 ></iframe>
             </div>
             <div className="clearfix"></div>

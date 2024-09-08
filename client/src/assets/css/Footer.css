@@ -44,10 +44,13 @@ li {
     display: flex;
     flex-direction: column;
     padding: 0 1vw;
-    gap: 3vw;
+    gap: 1.5vh;
 
 }
-
+.footer-left p{
+    /* background-color: antiquewhite; */
+    font-style: italic;
+}
 
 
 .footer-right {
@@ -88,6 +91,10 @@ li {
 
 .w3-address-left i {
     margin-top: 2px;
+}
+
+.copy-right{
+    font-style: italic;
 }
 
 #email {
