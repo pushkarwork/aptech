@@ -12,7 +12,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 const db = require("./database/db")
 
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.NODE_ENV !== "PRODUCTION") {
   dotenv.config({
     path: "./config/config.env"
   })
