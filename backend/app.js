@@ -12,7 +12,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 const db = require("./database/db")
 
-if (process.env.NODE_ENV !== "PRODUCTION") {
+if (process.env.NODE_ENV === "PRODUCTION") {
   dotenv.config({
     path: "./config/config.env"
   })
@@ -33,8 +33,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 if (process.env.NODE_ENV === "PRODUCTION") {
-
-  // console.log(path.join(__dirname, "../client/dist", "HIHIHIH"));
+  console.log("object")
+  console.log(path.join(__dirname, "../client/dist", "HIHIHIH"));
   app.use(express.static(path.join(__dirname, "../client/dist")))
 
   app.get("*", (req, res) => {
