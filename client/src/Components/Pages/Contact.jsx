@@ -26,7 +26,7 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true); // Start the loader
         try {
-            const response = await fetch('http://localhost:3500/users/api/formData', {
+            const response = await fetch('https://theaptech.info/users/api/formData', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
