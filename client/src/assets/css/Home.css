@@ -88,9 +88,16 @@ body {
     font-style: italic;
 }
 
+.exploreBTN {
+    display: none;
+}
+
+/* Glowing button styles */
+
+
 @media (max-width:600px) {
     .carousel-item {
-        height: 80vh;
+        height: 65vh;
         overflow: hidden;
     }
 
@@ -139,6 +146,79 @@ body {
         width: 99%;
         gap: 1.5vw;
         font-style: italic;
+    }
+
+    .exploreBTN-link-style {
+        text-decoration: none;
+    }
+
+    .exploreBTN {
+        display: block;
+
+        margin-top: 3vh !important;
+        margin: auto;
+        background-color: #333;
+        /* Dark background for better glow effect */
+        color: #e7a743;
+        /* Text color */
+        border: 2px solid #e7a743;
+        /* Border color matching the text color */
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 10px 20px;
+        /* Padding */
+        font-size: 16px;
+        /* Font size */
+        font-weight: bold;
+        /* Font weight */
+        cursor: pointer;
+        /* Pointer cursor */
+        position: relative;
+        /* Relative positioning for pseudo-elements */
+        outline: none;
+        /* Remove default outline */
+        transition: box-shadow 0.3s;
+        /* Smooth transition for shadow effect */
+    }
+
+    /* Continuous glowing effect */
+    .exploreBTN::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        border-radius: 12px;
+        /* Slightly larger border radius for the glow */
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+        /* Glowing effect */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        /* Add shadow for glowing effect */
+        opacity: 0.7;
+        /* Slightly transparent for soft glow */
+        z-index: -1;
+        /* Place behind the button */
+        animation: pulse 1.5s infinite;
+        /* Pulsing animation for continuous glow */
+    }
+
+    /* Keyframes for pulsing animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.7;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0.7;
+        }
     }
 
 }

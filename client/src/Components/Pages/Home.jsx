@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "../../assets/css/Home.css"
+import { Link } from "react-router-dom"
 const Home = () => {
     useEffect(() => {
         // Scroll to top of the page when the component is rendered
@@ -26,7 +27,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="carousel-item" id='secImg'>
-                        <img src="/images/ab11.jpg"  className="d-block w-100" alt="..." />
+                        <img src="/images/ab11.jpg" className="d-block w-100" alt="..." />
                         <div className="textBox text-center">
                             <div className="col-md-8 banner_text_left" id="secondImgBox">
                                 <h3>Transform Your Vision into Reality</h3>
@@ -45,6 +46,9 @@ const Home = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
+            <Link to="/services" className="exploreBTN-link-style">
+                <button className="exploreBTN">Explore...</button>
+            </Link>
         </div>
     )
 }
