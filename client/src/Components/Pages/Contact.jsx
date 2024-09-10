@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../../assets/css/Contact.css"
 import Loader from '../Layout/Loader';
 const Contact = () => {
+    useEffect(() => {
+        // Scroll to top of the page when the component is rendered
+        window.scrollTo(0, 0);
+    }, []);
     // Single state to manage form data
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({

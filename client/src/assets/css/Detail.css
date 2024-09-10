@@ -1,0 +1,13 @@
+.Detail {
+    color: white;
+    /* background-color: crimson; */
+    margin-top: 2vw;
+    /* width: 80vw; */
+    /* margin: auto; */
+    padding: 0vh 2vh;
+    /* line-height: 10px; */
+    font-style: italic;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}

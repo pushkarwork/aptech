@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../../assets/css/Home.css"
 const Home = () => {
+    useEffect(() => {
+        // Scroll to top of the page when the component is rendered
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <div id="carouselExample" className="carousel slide">
@@ -21,8 +25,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img src="/images/22.jpg" className="d-block w-100" alt="..." />
+                    <div className="carousel-item" id='secImg'>
+                        <img src="/images/ab11.jpg"  className="d-block w-100" alt="..." />
                         <div className="textBox text-center">
                             <div className="col-md-8 banner_text_left" id="secondImgBox">
                                 <h3>Transform Your Vision into Reality</h3>

@@ -1,0 +1,13 @@
+.pic {
+    /* background-color: blueviolet; */
+    width:85%;
+    margin: auto;
+
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+

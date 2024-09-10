@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom"
 import "../../assets/css/About.css"
 const About = () => {
+    useEffect(() => {
+        // Scroll to top of the page when the component is rendered
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="about" id="about">
             <div className="container mainC">
@@ -14,7 +18,7 @@ const About = () => {
                         <h3>Transforming Ideas into Digital Masterpieces </h3>
                         <p>Emphasizes creativity and the unique value of turning concepts into fully developed websites.</p>
                         <div className="readmore-w3">
-                            <Link className="readmore" id='button' to="#" data-toggle="modal" data-target="#myModal">Read More<i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
+                            <Link className="readmore" id='button' to="/services" data-toggle="modal" data-target="#myModal">Read More<i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
                         </div>
                     </div>
                     <div className="col-md-6 bottomgridimg">
@@ -30,7 +34,7 @@ const About = () => {
                         <h3>Building Websites That Drive Success </h3>
                         <p>Highlights the impact of your service, focusing on visually appealing websites that achieve business goals.</p>
                         <div className="readmore-w3">
-                            <Link id='button' className="readmore" to="#" data-toggle="modal" data-target="#myModal">Read More<i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
+                            <Link id='button' className="readmore" to="/services" >Read More<i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
                         </div>
                     </div>
                     <div className="clearfix"></div>

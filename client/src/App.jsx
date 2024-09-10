@@ -10,6 +10,7 @@ import Contact from './Components/Pages/Contact'
 
 import Navbar from './Components/Layout/Navbar'
 import Footer from './Components/Layout/Footer'
+import ServDetails from './Components/Pages/ServDetails'
 const App = () => {
   return (
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/test' element={<Testimonials />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/serviceDetail/:id' element={<ServDetails />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,11 @@
+.desc {
+    /* background-color: crimson; */
+    padding: 0vh 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    /* line-height: 5vh; */
+    align-items: center;
+    padding-bottom: 3vw;
+    font-style: italic;
+}

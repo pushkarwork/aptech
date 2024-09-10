@@ -1,0 +1,21 @@
+#headng {
+    /* background-color: aliceblue; */
+    margin: auto;
+    font-size: larger;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+@media (max-width:600px) {
+    #headng {
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+        
+    }
+
+
+
+}

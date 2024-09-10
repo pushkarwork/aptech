@@ -1,0 +1,46 @@
+/* ServDetails.css */
+/* @keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.MainCont {
+    animation: slideInFromTop 0.5s ease-out;
+} */
+
+
+
+
+.MainCont {
+    /* background-color: rgb(34, 86, 86); */
+    /* height: vh */
+    padding: 3vw;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr;
+}
+
+.pic-desc {
+    /* background-color: chocolate; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vh 0;
+}
+
+@media (max-width:600px) {
+
+    .pic-desc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 1vh 0;
+    }
+
+}
