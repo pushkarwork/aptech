@@ -4,7 +4,8 @@
     font-size: larger;
     font-weight: 900;
     letter-spacing: 2px;
-    color: white;
+    /* color: white; */
+    color: #e7a743;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }

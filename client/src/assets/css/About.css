@@ -15,7 +15,7 @@
 }
 
 .bottomgridtext {
-    background-color: crimson;
+    background-color: #2c2c2cb1;
     width: 100%;
     color: white;
     display: flex;
@@ -55,7 +55,7 @@
 }
 
 .about-bottom-grid2 .bottomgridtext {
-    background-color: #00bce4;
+    background-color: #2c2c2cb1;
 }
 
 @media (max-width: 600px) {
@@ -68,7 +68,7 @@
     }
 
     .bottomgridtext {
-        background-color: crimson;
+        background-color:#2c2c2cb1;
         width: 100%;
         color: white;
         display: flex;
@@ -90,6 +90,6 @@
     }
 
     .about-bottom-grid2 .bottomgridtext {
-        background-color: #00bce4;
+        background-color: #2c2c2cb1;
     }
 }
