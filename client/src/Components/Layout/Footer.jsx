@@ -34,7 +34,7 @@ const Footer = () => {
                                 <h6>Phone Number</h6>
                             </div>
                             <div className="w3-address-right">
-                                <p>+91 98104 99929 <br /> +91 87000 87827</p>
+                                <p>+91 87000-87827 <br /> +91 70159-80747</p>
 
 
                             </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                             </div>
                             <div className="w3-address-right">
 
-                                <p>Email :<Link to="mailto:Pushkar753@gmail.com" id='email'>Pushkar753@gmail.com</Link></p>
+                                <p>Email :<Link to="mailto:theaptechh@gmail.com" id='email'>theaptechh@gmail.com</Link></p>
                             </div>
                             <div className="clearfix"> </div>
                         </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                             </div>
                             <div className="w3-address-right">
 
-                                <p>37, Molarband, Badarpur, Delhi, IND
+                                <p>Office:1 & 2 ground floor, Badarpur, Delhi, IND
 
                                 </p>
                             </div>
