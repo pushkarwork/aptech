@@ -4,6 +4,7 @@ import Home from './Components/Pages/Home'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import About from './Components/Pages/About'
 import Services from './Components/Pages/Services'
+import { Toaster } from 'react-hot-toast';
 import Portfolio from './Components/Pages/Portfolio'
 import Testimonials from './Components/Pages/Testimonials'
 import Contact from './Components/Pages/Contact'
@@ -15,6 +16,7 @@ const App = () => {
   return (
 
     <BrowserRouter>
+    <Toaster position='top-center' />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

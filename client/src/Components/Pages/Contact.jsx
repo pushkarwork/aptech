@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../../assets/css/Contact.css"
 import Loader from '../Layout/Loader';
+import toast from "react-hot-toast"
 const Contact = () => {
     useEffect(() => {
         // Scroll to top of the page when the component is rendered
@@ -47,13 +48,17 @@ const Contact = () => {
                     email: '',
                     message: ''
                 });
+                toast.success("Message sent successfully!!")
             } else {
                 console.error('Form submission error');
+                toast.error("Something went wrong!!")
             }
         } catch (error) {
             console.error('Error submitting form:', error);
+            toast.error("Something went wrong!!")
         } finally {
             setLoading(false); // Stop the loader
+            toast.error("Something went wrong!!")
         }
     };
 
