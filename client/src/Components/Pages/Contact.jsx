@@ -58,7 +58,7 @@ const Contact = () => {
             toast.error("Something went wrong!!")
         } finally {
             setLoading(false); // Stop the loader
-            toast.error("Something went wrong!!")
+            
         }
     };
 
