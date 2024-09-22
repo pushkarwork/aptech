@@ -9,10 +9,10 @@ const Home = () => {
         tl.from(".banner_text_left", {
             // x: -600,
             delay: 0.5,
-            duration: 0.55,
+            duration: 1,
             opacity: 0,
             ease: "power4.in",
-            stagger: 0.5
+            stagger: 0.1
 
 
         })
@@ -20,16 +20,17 @@ const Home = () => {
             // x: 520,
             // delay: 1,
             opacity: 0,
-            duration: 0.55,
+            duration: 1,
             ease: "power4.in",
 
         })
         tl.from(".banner_text_right h4 span", {
             // x: 920,
             // y: -100,
-            duration: 0.3,
-            delay: 0.2,
+            duration: 1,
+            // delay: 0.2,
             opacity: 0,
+            ease: "power4.in",
             // rotate: 500
         })
     })
