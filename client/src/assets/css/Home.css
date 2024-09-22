@@ -78,6 +78,7 @@ body {
 }
 
 .banner_text_right h4 span {
+    display: inline-block;
     font-style: italic;
     color: #e7a743;
 }

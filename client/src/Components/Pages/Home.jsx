@@ -1,8 +1,40 @@
 import React, { useEffect } from 'react'
 import "../../assets/css/Home.css"
 import { Link } from "react-router-dom"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 const Home = () => {
+    useGSAP(() => {
+        const tl = gsap.timeline();
+        tl.from(".banner_text_left", {
+            // x: -600,
+            delay: 0.5,
+            duration: 0.55,
+            opacity: 0,
+            ease: "power4.in",
+            stagger: 0.5
+
+
+        })
+        tl.from(".banner_text_right", {
+            // x: 520,
+            // delay: 1,
+            opacity: 0,
+            duration: 0.55,
+            ease: "power4.in",
+
+        })
+        tl.from(".banner_text_right h4 span", {
+            // x: 920,
+            // y: -100,
+            duration: 0.3,
+            delay: 0.2,
+            opacity: 0,
+            // rotate: 500
+        })
+    })
     useEffect(() => {
+
         // Scroll to top of the page when the component is rendered
         window.scrollTo(0, 0);
     }, []);
