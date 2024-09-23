@@ -1,15 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../../assets/css/Home.css"
 import { Link } from "react-router-dom"
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 const Home = () => {
+    const [scrollT, setScrollT] = useState(false)
     useGSAP(() => {
         const tl = gsap.timeline();
         tl.from(".banner_text_left", {
             // x: -600,
-            delay: 0.5,
-            duration: 1,
+            delay: 0.3,
+            duration: 0.7,
             opacity: 0,
             ease: "power4.in",
             stagger: 0.1
@@ -20,14 +23,14 @@ const Home = () => {
             // x: 520,
             // delay: 1,
             opacity: 0,
-            duration: 1,
+            duration: 0.7,
             ease: "power4.in",
 
         })
         tl.from(".banner_text_right h4 span", {
             // x: 920,
             // y: -100,
-            duration: 1,
+            duration: 0.7,
             // delay: 0.2,
             opacity: 0,
             ease: "power4.in",
@@ -79,6 +82,29 @@ const Home = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
+            <ScrollTrigger onEnter={() => setScrollT(true)} onExit={() => setScrollT(false)}>
+                <div className='counterMain'>
+                    <div className='CounterDiv'>
+                        <h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={100} />}%</h2>
+                        <p>Satisfied Customers</p>
+                    </div> <div className='CounterDiv'>
+                        <h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={98} />}%</h2>
+                        <p>Successful Deployments</p>
+                    </div> <div className='CounterDiv'>
+                        <h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={15} />}</h2>
+                        <p>Partnerships Established</p>
+                    </div>
+                    <div className='CounterDiv'>
+                        <h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={60} />}</h2>
+                        <p>Innovations Delivered</p>
+                    </div>
+
+                </div>
+            </ScrollTrigger>
             <Link to="/services" className="exploreBTN-link-style">
                 <button className="exploreBTN">Explore...</button>
             </Link>

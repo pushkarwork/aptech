@@ -93,8 +93,58 @@ body {
     display: none;
 }
 
-/* Glowing button styles */
+.counterMain {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    /* gap: 25vh; */
+    padding: 5vh 0;
+    min-height: 30vh;
 
+}
+
+.CounterDiv {
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 5vh;
+    align-items: center;
+    line-height: 5vh;
+}
+
+.CounterDiv h2 {
+    font-weight: 900;
+}
+
+.CounterDiv p {
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .counterMain {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .CounterDiv {
+        /* background-color: cadetblue; */
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 1vh;
+    }
+    .CounterDiv p {
+        font-weight: 600;
+        text-align: center;
+    }
+}
 
 @media (max-width:600px) {
     .carousel-item {
