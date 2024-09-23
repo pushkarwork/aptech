@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ReactStars from "react-rating-stars-component";
 import "../../assets/css/Home.css"
 import { Link } from "react-router-dom"
 import gsap from 'gsap';
@@ -86,25 +87,180 @@ const Home = () => {
                 <div className='counterMain'>
                     <div className='CounterDiv'>
                         <h2>
-                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={100} />}%</h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={0.5} end={100} />}%</h2>
                         <p>Satisfied Customers</p>
                     </div> <div className='CounterDiv'>
                         <h2>
-                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={98} />}%</h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={0.5} end={98} />}%</h2>
                         <p>Successful Deployments</p>
                     </div> <div className='CounterDiv'>
                         <h2>
-                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={15} />}</h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={0.5} end={15} />}</h2>
                         <p>Partnerships Established</p>
                     </div>
                     <div className='CounterDiv'>
                         <h2>
-                            {scrollT && <CountUp start={0} duration={2.75} delay={1.3} end={60} />}</h2>
+                            {scrollT && <CountUp start={0} duration={2.75} delay={0.5} end={60} />}</h2>
                         <p>Innovations Delivered</p>
                     </div>
 
                 </div>
             </ScrollTrigger>
+            <div className='ReviewsMainDiv'>
+                <h2>Our Customers Love What We Do</h2>
+                <p id='para'>Our customers love our products! Read their reviews to discover why they're raving about our quality, service, and overall experience. Join the satisfied ranks today!</p>
+                <div className='ReviewCardsDiv'>
+                    <div className='ratingCard'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    value={4.8}
+                                    isHalf={true}
+                                    edit={false}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(4.8)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            Working with AP Technologies on our website development has been a fantastic experience. The professionalism, attention to detail, and seamless communication throughout the project exceeded our expectations. The final product is modern, responsive, and perfectly tailored to our needs. Highly recommend!
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://images.pexels.com/photos/4307869/pexels-photo-4307869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+                            </div>
+                            <p>Vikram Singh </p>
+                        </div>
+                    </div>
+                    <div className='ratingCard length'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    value={4}
+                                    edit={false}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(4.0)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            AP Technologies truly transformed our online presence. Their team was responsive, innovative, and efficient, delivering a website that exceeded our expectations. Our visitors have commented on the sleek design and user-friendly experience!
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+                            </div>
+                            <p>Arjun Sharma</p>
+                        </div>
+                    </div>
+                    <div className='ratingCard'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    value={4.2}
+                                    isHalf={true}
+                                    edit={false}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(4.2)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            We couldn’t be more pleased with the website that AP Technologies built for us. Their attention to detail, timely delivery, and seamless integration of features have helped boost our customer engagement significantly!
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://images.pexels.com/photos/7581116/pexels-photo-7581116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+                            </div>
+                            <p>Ravi Patel</p>
+                        </div>
+                    </div>
+                    <div className='ratingCard thirdRow'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    value={3.9}
+                                    edit={false}
+                                    isHalf={true}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(3.9)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            Working with AP Technologies was a fantastic experience. They understood our business needs perfectly and delivered a website that not only looks great but functions flawlessly. Their ongoing support has been a game changer for our growth.
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://media.istockphoto.com/id/2101216413/photo/portrait-of-young-businesswoman-with-curly-hairstyle-wear-trendy-smart-casual-outfit-isolated.jpg?s=1024x1024&w=is&k=20&c=thuOCCPPZuprUTVrF1uvr3QHPrXWmIuqhzlUzRnGErs=' />
+                            </div>
+                            <p>Priya Desai</p>
+                        </div>
+                    </div>
+                    <div className='ratingCard length thirdRow'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    size={24}
+                                    value={4.3}
+                                    isHalf={true}
+                                    edit={false}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(4.3)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            AP Technologies developed an amazing website for us. Their professionalism and expertise were evident at every stage, from design to launch. We’ve seen a huge improvement in our site's traffic and user interaction.
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://media.istockphoto.com/id/1587315781/photo/happy-laughing-guy-posing-with-arms-folded.jpg?s=1024x1024&w=is&k=20&c=PhlH8J6fq8OjC67fvza6GLCqot3VCsm-YbOv14_CAfc=' />
+                            </div>
+                            <p>Karan Mehta</p>
+                        </div>
+                    </div>
+                    <div className='ratingCard thirdRow'>
+                        <div className='ratingRow'>
+                            <div className='stars'>
+                                <ReactStars
+                                    count={5}
+                                    isHalf={true}
+                                    size={24}
+                                    value={4.5}
+                                    edit={false}
+                                    activeColor="#ffd700"
+                                    style={{ display: 'inline-block' }}
+                                />(4.5)
+                            </div>
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div className='ratingPara'>
+                            AP Technologies provided outstanding service throughout the entire development process. The end result was a beautifully designed, high-performing website that’s been critical in expanding our business reach.
+                        </div>
+                        <div className='ratingNameMain'>
+                            <div className='ratingNameImg'>
+                                <img src='https://images.pexels.com/photos/4307692/pexels-photo-4307692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+                            </div>
+                            <p>Ananya Iyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <Link to="/services" className="exploreBTN-link-style">
                 <button className="exploreBTN">Explore...</button>
             </Link>
